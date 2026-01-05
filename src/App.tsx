@@ -1,47 +1,54 @@
-import ProjectCard from "./components/projects";
+import Projects from "./components/Projects";
 import About from "./components/about";
 
 function App() {
   return (
-    <main style={{ maxWidth: "900px", margin: "0 auto", padding: "3rem 1rem" }}>
+    <main
+      style={{
+        maxWidth: "900px",
+        margin: "0 auto",
+        padding: "3rem 1rem",
+      }}
+    >
+      {/* ===== HEADER SECTION ===== */}
       <section>
         <h1 style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>
           Marco Scherillo
         </h1>
 
-        <h2 style={{ fontSize: "1.25rem", fontWeight: 400, color: "#555" }}>
-          Computer Science Graduate From NJIT
+        <h2
+          style={{
+            fontSize: "1.25rem",
+            fontWeight: 400,
+            color: "#555",
+          }}
+        >
+          Computer Science Graduate from NJIT
         </h2>
-        <About/>
+
+        <About />
+
         <div style={{ marginTop: "2rem" }}>
-          <a href="https://github.com/Marco-Scherillo" target="_blank">
+          <a
+            href="https://github.com/Marco-Scherillo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
           {" · "}
-          <a href="linkedin.com/in/marco-scherillo-7a7428158" target="_blank">
+          <a
+            href="https://linkedin.com/in/marco-scherillo-7a7428158"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
         </div>
       </section>
-      <section style={{ marginTop: "4rem" }}>
-        <h2 style={{ fontSize: "2rem", marginBottom: "1.5rem" }}>Projects</h2>
 
-        <div style={{ display: "grid", gap: "1.5rem" }}>
-          <ProjectCard
-            title="A* 4x4 Puzzle Solver"
-            description="Implemented the A* search algorithm in C to solve a 4x4 sliding puzzle using admissible heuristics."
-            tech={["C", "A*", "Heuristics"]}
-            github="https://github.com/Marco-Scherillo/Intesive-Programing-in-Linux-Projects."
-          />
-
-          <ProjectCard
-            title="Pokémon Battle Simulator"
-            description="Full-stack Pokémon battle simulator with turn-based logic and team composition."
-            tech={["React", "TypeScript", "Node.js"]}
-            github="https://github.com/ghxlam/covey-mon"
-          />
-        </div>
-      </section>
+      {/* ===== PROJECTS SECTION ===== */}
+      <Projects />
     </main>
   );
 }

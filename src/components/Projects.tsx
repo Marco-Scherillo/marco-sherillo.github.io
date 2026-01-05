@@ -1,0 +1,75 @@
+import ProjectCard from "./ProjectCard";
+
+export default function Projects() {
+  return (
+    <section style={{ marginTop: "4rem" }}>
+      <h2 style={{ fontSize: "2rem", marginBottom: "1.5rem" }}>
+        Projects
+      </h2>
+
+      <div style={{ display: "grid", gap: "1.5rem" }}>
+        <ProjectCard
+          title="A* 4x4 Puzzle Solver"
+          description="Implemented the A* search algorithm in C to solve a 4x4 sliding puzzle using admissible heuristics."
+          tech={["C", "A*", "Heuristics", "Data Structures"]}
+          github="https://github.com/Marco-Scherillo/Intesive-Programing-in-Linux-Projects"
+        />
+
+        <ProjectCard
+          title="Pokémon Battle Simulator"
+          description="Full-stack Pokémon battle simulator with turn-based logic and team composition."
+          tech={["React", "TypeScript", "Node.js"]}
+          github="https://github.com/ghxlam/covey-mon"
+        />
+
+        <ProjectCard
+          title="DigiDex – Yu-Gi-Oh Card Scanner"
+          description="Android app that scans Yu-Gi-Oh cards using OCR and stores collections locally."
+          tech={["Android", "Java", "OCR"]}
+        />
+
+        <ProjectCard
+          title="SPL-Tool (FDA XML Parser)"
+          description="Backend tool for parsing FDA Structured Product Label XML files and reconstructing tables."
+          tech={["Python", "Flask", "XML", "DOCX"]}
+        />
+
+        <ProjectCard
+          title="Hadoop MapReduce Word Frequency Analyzer"
+          description="Pairs-based MapReduce program computing relative word frequencies from large datasets."
+          tech={["Java", "Hadoop", "MapReduce"]}
+        />
+
+        <ProjectCard
+          title="MPI Matrix Multiplication"
+          description="Parallel matrix multiplication using MPI with distributed computation."
+          tech={["C", "MPI", "Parallel Computing"]}
+        />
+
+        <ProjectCard
+          title="Pthreads Pi Approximation"
+          description="Multithreaded C program approximating Pi and analyzing performance across threads."
+          tech={["C", "Pthreads", "Concurrency"]}
+        />
+
+        <ProjectCard
+          title="FORTRAN-95 Interpreter"
+          description="Lexer, parser, and interpreter for a subset of FORTRAN-95."
+          tech={["Python", "Parsing", "Compilers"]}
+        />
+
+        <ProjectCard
+          title="Covey.Town Multiplayer App"
+          description="Full-stack multiplayer web app with real-time interaction and REST APIs."
+          tech={["Node.js", "TypeScript", "React"]}
+        />
+
+        <ProjectCard
+          title="Airline Delay Analytics Pipeline"
+          description="Hadoop and Oozie pipeline analyzing airline on-time performance data."
+          tech={["Hadoop", "Oozie", "Hive", "Pig"]}
+        />
+      </div>
+    </section>
+  );
+}

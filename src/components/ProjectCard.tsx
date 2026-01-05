@@ -21,19 +21,19 @@ export default function ProjectCard({
       <p style={{ marginBottom: "0.75rem" }}>{description}</p>
 
       <p style={{ fontSize: "0.9rem", color: "#555" }}>
-        <strong>Tech:</strong> {tech.join(", ")}
+        <strong>Tech:</strong> {tech.join(", ") }
       </p>
 
       <div style={{ marginTop: "1rem" }}>
         {github && (
-          <a href={github} target="_blank">
+          <a href={github} target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         )}
         {demo && (
           <>
             {" · "}
-            <a href={demo} target="_blank">
+            <a href={demo} target="_blank" rel="noopener noreferrer">
               Live Demo
             </a>
           </>
