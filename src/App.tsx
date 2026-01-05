@@ -1,4 +1,5 @@
-import ProjectCard from "./projects";
+import ProjectCard from "./components/projects";
+import About from "./components/about";
 
 function App() {
   return (
@@ -11,11 +12,7 @@ function App() {
         <h2 style={{ fontSize: "1.25rem", fontWeight: 400, color: "#555" }}>
           Computer Science Graduate From NJIT
         </h2>
-
-        <p style={{ marginTop: "1.5rem", fontSize: "1.1rem" }}>
-          I’m a computer science student focused on building full-stack
-          applications, distributed systems, and data-driven tools.
-        </p>
+        <About/>
         <div style={{ marginTop: "2rem" }}>
           <a href="https://github.com/Marco-Scherillo" target="_blank">
             GitHub
