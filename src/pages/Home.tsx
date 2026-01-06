@@ -41,9 +41,6 @@ export default function Home() {
       />
 
       <div className="relative max-w-[900px] mx-auto px-4 py-16">
-        {/* ===== SIDE ACCENTS ===== */}
-<div className="hidden lg:block absolute left-8 top-32 h-[60%] w-px bg-gray-200" />
-<div className="hidden lg:block absolute right-8 top-32 h-[60%] w-px bg-gray-200" />
 
 <div
   className="
@@ -54,7 +51,6 @@ export default function Home() {
     text-xs tracking-widest text-gray-400
   "
 >
-  COMPUTER SCIENCE
 </div>
 
         {/* ===== HERO / HEADER ===== */}

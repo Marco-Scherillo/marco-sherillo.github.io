@@ -24,6 +24,7 @@ export default function Projects() {
           title="DigiDex – Yu-Gi-Oh Card Scanner"
           description="Android app that scans Yu-Gi-Oh cards using OCR and stores collections locally."
           tech={["Android", "Kotlin", "OCR"]}
+          github="https://github.com/Marco-Scherillo/DeckMaster"
         />
 
         <ProjectCard
