@@ -82,7 +82,7 @@ export default function Home() {
             </a>
 
             <a
-              href="www.linkedin.com/in/marco-scherillo"
+              href="https://www.linkedin.com/in/marco-scherillo"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
